@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!--Google Fonts-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+    </style>
+  </head>
+
+  <body>
+    <div id="main-contanier">
+      <img id="pattern-circles" src="images/pattern-circles.svg" alt="pattern-circles">
+      <h1>Simple, traffic-based pricing</h1>
+      <small>Sign-up for our 30-day trial. No credit card required.</small>
+      <div id="container">
+        <p id="pageviews">100k Pageviews</p>
+        <p id="price">$16.00</p>
+        <p id="months">/ month</p>
+        <label for="range">
+          <input type="range" name="range" id="range" min="0" max="1000" step="10" value="100">
+        </label>
+        <output for="range" class="output"></output>
+        <div id="billing">
+          <p id="monthly-billing">Monthly Billing</p>
+          <div id="switch">
+            <div id="circle"></div>
+          </div>
+          <p id="yearly-billing">Yearly Billing</p>
+          <p id="discount">25% discount</p>
+        </div>
+        <div id="start-trail">
+          <p id="priv-1" class="privileges">Unlimited websites</p>
+          <p id="priv-2" class="privileges">100% data ownership</p>
+          <p id="priv-3" class="privileges">Email reports</p>
+          <button type="submit">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
